@@ -1,0 +1,10 @@
+# file managed by puppet
+
+pid=/var/run/ddclient.pid
+protocol=dyndns2
+use=if, if=eth0
+use=web, web=checkip.dyndns.org
+server=members.dyndns.org
+login=<%= dyndns_login %>
+password=<%= dyndns_password %>
+<%= dyndns_hostname %>
